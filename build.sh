@@ -1,3 +1,4 @@
+#!/bin/bash
 NOINSTALLER=""
 NOINSTALL=""
 for arg in "$@"

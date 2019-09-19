@@ -136,7 +136,7 @@ public class APIServer {
 		try {
 			String clientSentence;
 
-			reader = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
+			reader = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream(), "UTF-8"));
 			writer = new PrintWriter(connectionSocket.getOutputStream());
 
 			api = controlServer ? new APIHandler(eventHandler, writer) : 
